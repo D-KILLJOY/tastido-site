@@ -11,13 +11,20 @@
 		<header>
 			<nav class="head-nav">
 				<h1 class="main-name"><a href="#">Tastdo</a></h1>
-				<ul class="nav-list">
-					<li><a href="#">Home</a></li>
-					<li><a href="#menu">Menu</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<h2 class="header-btn"><a href="#reservation">Reserve Table</a></h2>
+				<div class="btn-con">
+					<div class="nav-btn"></div>
+				</div>
+				<div class="navigations">
+					<ul class="nav-list">
+						<li class="nav-list-item"><a href="#">Home</a></li>
+						<li class="nav-list-item"><a href="#menu">Menu</a></li>
+						<li class="nav-list-item"><a href="#about">About</a></li>
+						<li class="nav-list-item"><a href="#contact">Contact</a></li>
+					</ul>
+					<h2 class="header-btn nav-list-item">
+						<a href="#reservation">Reserve Table</a>
+					</h2>
+				</div>
 			</nav>
 			<img
 				class="header-img"
@@ -33,11 +40,12 @@
 				</h2>
 				<p>
 					Looking for something that will fill your appettite and make you
-					looking for more? Well you've found it
+					looking for more? Well you've found it.
 				</p>
 				<button class="d-button"><a href="#menu">Discover Menu</a></button>
 			</div>
 		</header>
+
 		<section class="popular-dishes">
 			<h2 class="section-header">
 				<span class="orange">Our Popular</span> Dishes
@@ -88,6 +96,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="about" id="about">
 			<div class="container">
 				<h2 class="section-header"><span class="orange">About</span> Us</h2>
@@ -177,6 +186,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="clients">
 			<h2 class="section-header">
 				<span class="orange">What</span> are Clients Saying
@@ -208,6 +218,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="reservation" id="reservation">
 			<h2 class="section-header">
 				<span class="orange">Reserve</span> a Table
@@ -223,40 +234,61 @@
 						<input type="text" id="email" name="email" required />
 					</div>
 					<div class="right">
-						<label for="name">Number of People</label>
-						<input type="number" min="1" id="name" name="name" required />
-						<label for="date">Time</label>
-						<input type="text" id="date" name="date" required />
-						<label for="email">Phone number</label>
-						<input type="text" id="email" name="email" required />
+						<label for="nop">Number of People</label>
+						<input type="number" min="1" id="nop" name="nop" required />
+						<label for="time">Time</label>
+						<input type="text" id="time" name="time" required />
+						<label for="phone">Phone number</label>
+						<input type="text" id="phone" name="phone" required />
 					</div>
 				</div>
 				<button class="form-btn" type="submit">Submit</button>
 			</form>
 		</section>
+
 		<footer class="footer">
-			<div class="comp-det">
-				<h2 class="special">Tastdo</h2>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
-					soluta. Modi laudantium eos id, voluptates alias illo beatae est
-					pariatur qui sint fugiat consequuntur voluptatum porro cumque, eius
-					fugit soluta.
-				</p>
+			<div class="footer-con">
+				<div class="comp-det">
+					<h2 class="special">Tastdo</h2>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+						soluta. Modi laudantium eos id, voluptates alias illo beatae est
+						pariatur qui sint fugiat consequuntur voluptatum porro cumque, eius
+						fugit soluta.
+					</p>
+				</div>
+				<div class="contact" id="contact">
+					<p>Contact Us</p>
+					<p>+295890234</p>
+					<p>Tastedowil@gmail.com</p>
+					<p>2, Lawansi, Loomhill, Lagos Canada</p>
+				</div>
+				<div class="news-letter">
+					<p>Sign up for news</p>
+					<form action="">
+						<input type="email" name="" id="email" />
+						<button type="submit">Subscribe</button>
+					</form>
+				</div>
 			</div>
-			<div class="contact" id="contact">
-				<p>Contact Us</p>
-				<p>+295890234</p>
-				<p>Tastedowil@gmail.com</p>
-				<p>2, Lawansi, Loomhill, Lagos Canada</p>
-			</div>
-			<div class="news-letter">
-				<p>Sign up for news</p>
-				<form action="">
-					<input type="email" name="" id="email" />
-					<button type="submit">Subscribe</button>
-				</form>
-			</div>
+			<p>
+				Designed by
+				<a
+					class="footer-link"
+					target="_blank"
+					href="https://twitter.com/dre_llex"
+					>Dre_llex</a
+				>
+				and built by
+				<a
+					class="footer-link"
+					target="_blank"
+					href="https://linktr.ee/didiauche"
+					>KJ</a
+				>
+				&copy All rights reserved 2022
+			</p>
 		</footer>
+		<script src="app.js"></script>
 	</body>
 </html>
