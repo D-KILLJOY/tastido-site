@@ -288,13 +288,16 @@ header {
 	position: relative;
 	color: #fff;
 	margin: 5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container {
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
 	left: 50%;
-	translate: -50% -50%;
+	translate: -50% -50%; */
 	width: 30rem;
 	padding: 2rem;
 	height: 90%;
